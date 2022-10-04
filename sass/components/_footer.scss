@@ -1,0 +1,22 @@
+/* FOOTER */
+.footer {
+  display: flex;
+  background: rgb(47 48 58);
+  background-image: linear-gradient(90deg, rgba(47 48 58 / .4) 0%,
+      rgba(47 48 58 / .4) 0%);
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-group {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-logo {
+  display: block;
+  padding: 0;
+  margin-bottom: 20px;
+  color: var(--light-white);
+}

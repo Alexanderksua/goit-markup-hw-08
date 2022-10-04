@@ -1,0 +1,54 @@
+.qualites {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--light-white);
+}
+
+.qualites__icon {
+  display: block;
+}
+
+.qualites__item--icon {
+  display: flex;
+
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background: var(--ligth-gray-bkgr-team);
+
+  border-radius: 4px;
+}
+
+.qualites__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.qualites__item {
+
+  flex-basis: calc((100% - 90px)/4);
+}
+
+.qualites__item--title {
+  font-family: var(--qualites-item-title);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16/14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--dark-gray);
+  margin-bottom: 10px;
+}
+
+.qualites__item--paragraf {
+  font-family: var(--qualites-item-paragraf);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24/14);
+  letter-spacing: 0.03em;
+
+  color: var(--light-gray);
+}

@@ -1,0 +1,49 @@
+/* FOOTER-SOCIALS */
+
+.footer-social {
+  display: block;
+  /* padding-top: 12px; */
+}
+
+.footer-social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16/14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--light-white);
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255 255 255 / .1);
+  fill: var(--light-white);
+  /*  Задаём значения перехода  */
+  transition: fill var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1),
+    background-color var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.footer-social-icon {
+  fill: var(--light-white);
+  /*  Задаём значения перехода  */
+  transition: fill var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--blue);
+  fill: var(--light-white);
+}

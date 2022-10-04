@@ -1,0 +1,131 @@
+/* HEADER */
+.header {
+  background-color: var(--light-white);
+  border-bottom: 1px solid var(--white-br-bottom);
+}
+
+.contacts-icon {
+  display: block;
+  margin-right: 10px;
+  fill: var(--light-gray);
+  /*  Задаём значения перехода  */
+  transition: fill var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-group,
+.header-group .list.contacts,
+.header-group .list.pages {
+  display: flex;
+  align-items: center;
+}
+
+.header-group .list.contacts .link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo,
+.footer-logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-family: 'Raleway';
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31/26);
+
+  letter-spacing: 0.03em;
+}
+
+.header-logo {
+  color: var(--black);
+  margin-right: 93px;
+}
+
+.header-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blue-web {
+  color: var(--blue);
+}
+
+.header-group>.nav-group {
+  margin-right: auto;
+}
+
+.header-group>.nav-group a,
+.header-group>.list.contacts a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16/14);
+  letter-spacing: 0.02em;
+  color: var(--dark-gray);
+  /*  Задаём значения перехода  */
+  transition: color var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+/* .header-group>.list.contacts a  */
+.link-div {
+  color: var(--light-gray);
+  fill: var(--light-gray);
+  /*  Задаём значения перехода  */
+  transition-property: color, fill;
+  transition-duration: var(--transition-timing);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover .link-div .contacts-icon,
+a:hover .link-div,
+a:focus .link-div .contacts-icon,
+a:focus .link-div {
+  color: var(--blue);
+  fill: var(--blue);
+}
+
+.list.pages>.item.curent a {
+  color: var(--blue);
+}
+
+.header-group>.nav-group a:hover,
+.header-group>.nav-group a:focus {
+  color: var(--blue);
+}
+
+
+.pages-item:not(:last-child),
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-group li {
+  position: relative;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.pages-item.curent::after {
+  display: block;
+  content: '';
+  position: absolute;
+
+  width: 100%;
+
+  bottom: -1px;
+  left: 0;
+
+  background: var(--blue);
+  border: 2px solid var(--blue);
+  border-radius: 2px;
+}

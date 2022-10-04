@@ -1,0 +1,68 @@
+.clients {
+  border-color: var(--white-bkgr);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--light-white);
+  /*  Задаём значения перехода  */
+  transition: border-color var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__title {
+  font-family: var(--clients-title-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42/36);
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--dark-gray);
+  margin-bottom: 50px;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients__item {
+  flex-basis: calc((100% - 150px)/6);
+}
+
+.clients__link {
+  display: flex;
+  cursor: pointer;
+  height: 92px;
+  border: 1px solid var(--clients-icons-light-gray);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  /*  Задаём значения перехода  */
+  transition: border var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__link {
+  &:hover {
+    border-color: var(--blue);
+  }
+
+  &:focus {
+    border-color: var(--blue);
+  }
+}
+
+.clients__icons {
+  display: flex;
+  justify-content: center;
+  fill: var(--clients-icons-light-gray);
+  /*  Задаём значения перехода  */
+  transition: fill var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__link {
+  &:hover .clients__icons {
+    fill: var(--blue);
+  }
+
+  &:focus .clients__icons {
+    fill: var(--blue);        
+  }
+}

@@ -1,0 +1,22 @@
+/* Block 3 */
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list a,
+.header-logo,
+.footer-logo {
+  text-decoration: none;
+  color: inherit;
+  text-transform: none;
+  font-style: normal;
+}
