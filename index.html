@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,31 +12,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
 
-  <title>index</title>
-  <!-- Нормализация стилей Обобщённая -->
+  <title>Студія</title>
+   <!-- Нормализация стилей Обобщённая -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-  <!-- Стили Проекта -->
-  <!-- Стили Секций на странице index.html по технологиям BEM/SASS: qualites features clients -->
+   <!-- Стили Проекта -->
+   <!-- Стили Секций на странице index.html по технологиям BEM/SASS: qualites features clients -->
   <link rel="stylesheet" href="./css/main.min.css">
-  <!-- Стили всех остальных элементов по технологии CSS -->
-  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+   <!-- Стили всех остальных элементов по технологии CSS -->
+   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <!-- Голова-Шапка сайты -->
-  <header class="header">
+   <!-- Голова-Шапка сайты -->
+   <header class="header">
     <div class="container">
-      <!-- Блок оформления фона header -->
+       <!-- Блок оформления фона header -->
 
-      <div class="header-group">
-        <!-- Панель навигации из двух частей -->
-        <!-- Панель навигации #1 - Логотип, Студія, Портфоліо -->
-        <!-- Логотип, WebStudio -->
-        <a class="header-logo" href="./index.html"><span class="blue-web">Web</span>Studio</a>
+       <div class="header-group">
+         <!-- Панель навигации из двух частей -->
+         <!-- Панель навигации #1 - Логотип, Студія, Портфоліо -->
+         <!-- Логотип, WebStudio -->
+         <a class="header-logo" href="./index.html"><span class="blue-web">Web</span>Studio</a>
         <nav class="nav-group">
-          <!-- Список ссылок на страницы -->
-          <ul class="list pages">
+           <!-- Список ссылок на страницы -->
+           <ul class="list pages">
             <li class="item pages-item curent">
               <a class="link curent" href="./index.html">Студія</a>
             </li>
@@ -48,8 +49,8 @@
           </ul>
         </nav>
 
-        <!-- Панель навигации #2 - Контакти: e-mail, tel -->
-        <ul class="list contacts">
+         <!-- Панель навигации #2 - Контакти: e-mail, tel -->
+         <ul class="list contacts">
           <li class="item contacts-item">
             <a class="link" href="mailto:alexanderksua@gmail.com">
               <div class="link-div">
@@ -74,20 +75,20 @@
     </div>
   </header>
 
-  <!--Главный контент страницы -->
+  <!-- Главный контент страницы -->
   <main>
-    <!-- Блок оформления фона main-top - Hero -->
+     <!-- Блок оформления фона main-top - Hero -->
 
-    <section class="hero">
+     <section class="hero">
       <div class="container">
         <div class="hero-group">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <!-- BUTTON -->
-          <button class="btn-hero" type="button" data-modal-open>Замовити послугу</button>
+           BUTTON
+           <button class="btn-hero" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </div>
-      <!-- Модульное окно - Форма заказа услуги -->
-      <div class="backdrop is-hidden" data-modal>
+       <!-- Модульное окно - Форма заказа услуги -->
+       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="close" type="button" data-modal-close>
             <svg class="button-icon" width="11" height="11" aria-label="cross">
@@ -133,8 +134,8 @@
               <textarea name="comment" id="comment" cols="60" rows="7" placeholder="Введіть коментар"></textarea>
             </div>
 
-            <!--CHECK BOX-->
-            <label for=policy class="checkbox-group">
+            CHECK BOX-->
+             <label for=policy class="checkbox-group">
               <input type="checkbox" class="checkbox visually-hidden" name="policy" id="policy" value="agree" required>
               <svg class="checkbox-icons" width="16" height="15">
                 <use class="icon-checked" href="./images/icons.svg#icon-check-box-checked"></use>
@@ -157,7 +158,7 @@
       </div>
     </section>
 
-    <!-- Секция описания качеств Студии-->
+     Секция описания Качеств Студии-->
     <section class="qualites">
       <div class="container">
 
@@ -220,12 +221,12 @@
 
     </section>
 
-    <!-- Секция описания видов деятельности Студии-->
-    <section class="features">
+     Секция описания видов деятельности Студии-->
+     <section class="features">
       <div class="container">
         <h2 class="features__title">Чим ми займаємося</h2>
-        <!-- Блок оборачивания div  для стилизации в будущем -->
-        <ul class="list features__list">
+         Блок оборачивания div  для стилизации в будущем
+         <ul class="list features__list">
           <li class="item features__item">
             <img class="features__list--img" src="./images/img_1_370x294.jpg"
               alt="ПК, планшет, клавіатура, блокнот, миша, монітор, карандаш, окуляри" width="370">
@@ -251,8 +252,8 @@
       </div>
     </section>
 
-    <!-- Секция описания членов команды Студии-->
-    <section class="team">
+     Секция описания членов команды Студии-->
+     <section class="team">
       <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="list team-list">
@@ -357,6 +358,7 @@
                 <h3 class="team-card-title">Микола Тарасов</h3>
                 <p class="team-card-paragraf">Marketing</p>
                 <ul class="list social-list">
+
                   <li class="item social-item">
                     <a class="link social-link" target="_blank" href="https://instagram.com"
                       rel="nofollow noreferrer noopener" aria-label="instagram">
@@ -365,6 +367,7 @@
                       </svg>
                     </a>
                   </li>
+
                   <li class="item social-item">
                     <a class="link social-link" target="_blank" href="https://twitter.com"
                       rel="nofollow noreferrer noopener" aria-label="twitter">
@@ -373,6 +376,7 @@
                       </svg>
                     </a>
                   </li>
+
                   <li class="item social-item">
                     <a class="link social-link" target="_blank" href="https://facebook.com"
                       rel="nofollow noreferrer noopener" aria-label="facebook">
@@ -381,6 +385,7 @@
                       </svg>
                     </a>
                   </li>
+
                   <li class="item social-item">
                     <a class="link social-link" target="_blank" href="https://linkedin.com"
                       rel="noopener nofollow noreferrer" aria-label="linkedin">
@@ -389,6 +394,7 @@
                       </svg>
                     </a>
                   </li>
+
                 </ul>
               </div>
             </div>
@@ -403,6 +409,7 @@
               <div class="team-card-text">
                 <h3 class="team-card-title">Михайло Єрмаков</h3>
                 <p class="team-card-paragraf">UI Designer</p>
+
                 <ul class="list social-list">
                   <li class="item social-item">
                     <a class="link social-link" target="_blank" href="https://instagram.com"
@@ -412,6 +419,7 @@
                       </svg>
                     </a>
                   </li>
+
                   <li class="item social-item">
                     <a class="link social-link" target="_blank" href="https://twitter.com"
                       rel="nofollow noreferrer noopener" aria-label="twitter">
@@ -420,6 +428,7 @@
                       </svg>
                     </a>
                   </li>
+
                   <li class="item social-item">
                     <a class="link social-link" target="_blank" href="https://facebook.com"
                       rel="nofollow noreferrer noopener" aria-label="facebook">
@@ -428,6 +437,7 @@
                       </svg>
                     </a>
                   </li>
+
                   <li class="item social-item">
                     <a class="link social-link" target="_blank" href="https://linkedin.com"
                       rel="noopener nofollow noreferrer" aria-label="linkedin">
@@ -436,6 +446,7 @@
                       </svg>
                     </a>
                   </li>
+
                 </ul>
               </div>
             </div>
@@ -443,8 +454,8 @@
         </ul>
       </div>
     </section>
-    <!-- Секция Логотипов Постоянных Клиентов-->
-    <section class="clients">
+     Секция Логотипов Постоянных Клиентов-->
+     <section class="clients">
       <div class="container">
         <h2 class="clients__title">Постійні клієнти</h2>
         <ul class="list clients__list">
@@ -495,39 +506,35 @@
               </svg>
             </a>
           </li>
-
         </ul>
       </div>
-
     </section>
-
-
   </main>
 
-  <!-- Подвал страницы -->
-  <footer class="footer">
+   Подвал страницы
+   <footer class="footer">
     <div class="container">
       <div class="footer-group">
-        <!-- Текст-Лого WebStudio -->
-        <address class="address">
+         Текст-Лого WebStudio
+         <address class="address">
           <a class="footer-logo" href="./index.html"><span class="blue-web">Web</span>Studio</a>
           <ul class="list contacts">
             <li class="item contacts-item">
-              <!-- Адрес физический  Студии -->
-              <a class="link contacts-item-coord" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+               Адрес физический  Студии
+               <a class="link contacts-item-coord" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
                 rel="nofollow noreferrer noopener">м. Київ, пр-т Лесі Українки, 26</a>
             </li>
             <li class="item contacts-item">
-              <!-- Почта электронная  Студии -->
-              <a class="link contacts-item-mailto" href="mailto:alexanderksua@gmail.com">alexanderksua@gmail.com</a>
+               Почта электронная  Студии
+               <a class="link contacts-item-mailto" href="mailto:alexanderksua@gmail.com">alexanderksua@gmail.com</a>
             </li>
             <li class="item contacts-item">
-              <!-- Телефон мобильный Студии -->
-              <a class="link contacts-item-tel" href="tel:+380950370108">+38 095 037 01 08</a>
+               Телефон мобильный Студии
+               <a class="link contacts-item-tel" href="tel:+380950370108">+38 095 037 01 08</a>
             </li>
           </ul>
         </address>
-        <!-- Социальные сети в Футере -->
+         Социальные сети в Футере
         <div class="footer-social">
           <h3 class="footer-social-title">Приєднуйтесь</h3>
           <ul class="list footer-social-list">
@@ -565,7 +572,7 @@
             </li>
           </ul>
         </div>
-        <!-- Мини форма отправки электронной почты в Футере -->
+         Мини форма отправки электронной почты в Футере
         <form class="footer-form" autocomplete="off" novalidate>
           <label for="email" class="footer-form-title">Підпишіться на розсилку</label>
           <div class="footer-submit-form">
@@ -582,7 +589,7 @@
       </div>
     </div>
   </footer>
-  <!-- Скрипт для формы модалного окна -->
+   Скрипт для формы модального окна
   <script src="./js/modal.js"></script>
 </body>
 
